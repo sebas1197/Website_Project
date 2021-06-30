@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contacto</title>
+
+    <meta name="title" content="Sitio web completo | Contacto">
+    <meta name="description" content="Conjunto de múltiples tecnologías web aplicadas a un proyecto real">
+    <meta http-equiv="content-language" content="es">
+    <meta name="author" content="Sebastián Landázuri">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link id="body-theme" rel="stylesheet" href="CSS/blue.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <script src="JS/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <script src="JS/main.js"></script>
+</head>
+<body>
+
+    <div id="change-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <section id="global">
+        
+        <header>
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="watch.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="content">
+            <div id="box">
+                <!-- Formulario de contacto -->
+                <h2>Contacto</h2>
+
+                <form action="" id="form_contact" method="POST">
+                    <label for="form_name">Nombre: </label>
+                    <input type="text" name="form_name" id="form_name" data-validation="alphanumeric" placeholder="Ingrese su nombre" required>
+                    
+                    <label for="form_lastname">Apellido: </label>
+                    <input type="text" name="form_lastname" id="form_lastname" data-validation="alphanumeric" placeholder="Ingrese su apellido" required>
+                    
+                    <label for="form_email">Email: </label>
+                    <input type="email" name="form_email" id="form_email" data-validation="email" placeholder="Ingrese su email" required>
+                   
+                    <label for="form_sex">Sexo: </label>
+                    <select name="form_sex" id="form_sex" required> 
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                    
+                    <label for="form_birthday">Fecha de Nacimiento: </label>
+                    <input type="date" name="form_birthday" id="form_birthday" data-validation="date" required>
+                    
+                    <input type="submit" id="form_button" value="Enviar">
+                </form>
+
+            </div>
+
+            <aside id="sidebar">
+
+                <div id="about">
+                    <h4><span>¿Quién soy?</span></h4>
+                    <img src="Images/user.png" alt="Imagen de usuario">
+                    <p>¡Hola! Me llamo Sebastián Landázuri y soy un Freelance Backend Developer especializado en 
+                        Programación Web y Desarrollos avanzados. Me considero Programador Web y Programador de Aplicaciones 
+                        de escritorio (C, C++, Java y Python).</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Identifícate</span></h4>
+                    <form action="">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name"> 
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email"> 
+                        <label for="password">Clave</label>
+                        <input type="password" name="password" id="password">
+
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+
+            </aside> 
+
+            <div class="clearfix"></div>
+        </section>
+
+    </section>
+
+    <footer>
+        Copyright © <span id="year_copyright"></span> Sebastián Landázuri G
+        <a href="#" class="up-to-body">Subir</a>
+    </footer>
+
+</body>
+</html>

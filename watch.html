@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Reloj</title>
+
+    <meta name="title" content="Sitio web completo | Reloj">
+    <meta name="description" content="Conjunto de múltiples tecnologías web aplicadas a un proyecto real">
+    <meta http-equiv="content-language" content="es">
+    <meta name="author" content="Sebastián Landázuri">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link id="body-theme" rel="stylesheet" href="CSS/blue.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-do.min.js"></script>
+   
+    <script src="JS/watch.js"></script>
+</head>
+<body>
+
+    <div id="change-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <section id="global">
+        
+        <header>
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="watch.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="content">
+            <div id="box">
+                <!-- Cargar Reloj -->
+                <div id="watch">
+
+                </div>
+            </div>
+
+            <aside id="sidebar">
+
+                <div id="about">
+                    <h4><span>¿Quién soy?</span></h4>
+                    <img src="Images/user.png" alt="Imagen de usuario">
+                    <p>¡Hola! Me llamo Sebastián Landázuri y soy un Freelance Backend Developer especializado en 
+                        Programación Web y Desarrollos avanzados. Me considero Programador Web y Programador de Aplicaciones 
+                        de escritorio (C, C++, Java y Python).</p>
+                </div>
+
+                <div id="login">
+                    <h4><span>Identifícate</span></h4>
+                    <form action="">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name"> 
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email"> 
+                        <label for="password">Clave</label>
+                        <input type="password" name="password" id="password">
+
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+
+            </aside> 
+
+            <div class="clearfix"></div>
+        </section>
+
+    </section>
+
+    <footer>
+        Copyright © <span id="year_copyright"></span> Sebastián Landázuri G
+        <a href="#" class="up-to-body">Subir</a>
+    </footer>
+
+</body>
+</html>
